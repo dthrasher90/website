@@ -1,7 +1,5 @@
-
-
-#main {
-    min-height: 675px;
+#home {
+    min-height: 685px;
     min-width: 100%;
     background-image: url('utah9.jpg');
     background-repeat: no-repeat;
@@ -9,33 +7,30 @@
     color: papayawhip;
 }
 
-
-.mainsection{
-  padding:0px;
-}
-.title{
-  width: 600px;
-  height: 200px;
-  float: right;
-  text-align: center;
-  padding-top: 25px;
-  margin-top: 125px;
-  padding-left: 15px;
+.mainsection {
+    padding: 0px;
 }
 
-.title h1{
-  font-family: Satisfy;
-  font-size: 48px;
-  border-bottom: 5px papayawhip;
-
+.title {
+    width: 600px;
+    height: 200px;
+    float: right;
+    text-align: center;
+    padding-top: 25px;
+    margin-top: 125px;
+    padding-left: 15px;
 }
 
-.title p{
-  font-family: lato;
-  font-size: 24px;
+.title h1 {
+    font-family: Satisfy;
+    font-size: 48px;
 
 }
 
+.title p {
+    font-family: lato;
+    font-size: 24px;
+}
 
 .navbar {
     position: fixed;
@@ -45,65 +40,73 @@
     z-index: 1;
 }
 
-
-.aboutsection{
-  padding: inherit;
-}
-#about img{
-
-  height: 250px;
-  width: 200px;
-  float: right;
-  padding-left: 3px;
+.aboutsection {
+    padding: inherit;
+    color: saddlebrown;
 }
 
-
-
-
- section{
-
-  height:700px;
-  width: 100%;
-  font-family: lato;
-  font-size: 16px;
-  color: darkslategray;
-  background-color: papayawhip;
-  padding-top: 40px;
-  overflow: hidden;
-  padding: 5px;
+#about img {
+    height: 250px;
+    width: 200px;
+    float: right;
+    padding-left: 3px;
 
 }
 
-  section h3{
+section.aboutme, section.portfolio{
+    height: 624px;
+    width: 100%;
+    font-family: arial;
+    font-size: 18px;
+    font-weight: bolder;
+    color: saddlebrown;
+    background-color: papayawhip;
+    padding-top: 40px;
+    overflow: hidden;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 10px;
+    /*line-height: 35px;*/
+
+}
+
+section p{
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+section h3 {
     padding: 7px;
     padding-top: 35px;
-    padding-left: 15px;
+
     font-family: Satisfy;
     font-size: 40px;
-    border-bottom: 4px darkslategrey;
-  }
+    font-weight: bold;
 
-.portfoliosection{
-  padding: inherit;
+
 }
-.portfolioBtn1{
+
+.portfoliosection {
+    padding: inherit;
+}
+
+.portfolioBtn1 {
     height: 200px;
     width: 200px;
     background-color: saddlebrown;
     font-family: 'Lobster', cursive;
-    color:snow;
-  }
+    color: snow;
+}
 
 .portfolioBtn2 {
-    height:200px;
+    height: 200px;
     width: 200px;
     background-color: saddlebrown;
     font-family: 'Lobster', cursive;
     font-size: 18px;
-    color:snow;
-    float: right;
-    padding: 5px;
+    color: snow;
 
+    padding: 5px;
 }
 
 .portfolioBtn3 {
@@ -111,11 +114,8 @@
     width: 200px;
     background-color: saddlebrown;
     font-family: 'Lobster', cursive;
-    color:snow;
+    color: snow;
     padding: 5px;
-
-
-
 }
 
 .portfolioBtn4 {
@@ -123,15 +123,39 @@
     width: 200px;
     background-color: saddlebrown;
     font-family: 'Lobster', cursive;
-    color:snow;
-    float: right;
+    color: snow;
+
     padding: 5px;
     animation-name: moveRtoL;
     animation-duration: 3s;
+}
+
+.blogsection {
+    padding: inherit;
+    background-color: papayawhip;
+}
+
+#blog  {
+  font: lato;
+  padding-top: 20px;
+  height: 624px;
+
 
 }
-@@keyframes moveRtoL {
-  from{transform:  translateX(0)}
-  to{transform: translateX(600)}
 
+#blog h3 {padding: 7px;
+    padding-top: 35px;
+    color: saddlebrown;
+    font-family: Satisfy;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+@keyframes moveRtoL {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(600)
+    }
 }
